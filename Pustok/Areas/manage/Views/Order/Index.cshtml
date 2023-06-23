@@ -1,0 +1,69 @@
+﻿@model PaginatedList<Order>
+@{
+    ViewData["Title"] = "Index";
+    int count = (Model.PageIndex - 1) * Model.PageSize;
+
+}
+
+<!-- Begin Page Content -->
+<div class="container-fluid">
+
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">Orders</h1>
+    </div>
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-10">
+            <table class="table table-sm">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Product count</th>
+                        <th scope="col">User</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Total</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Items)
+                    {
+                        count++;
+                        <tr>
+                            <th scope="row">@count</th>
+                            <td>@item.OrderItems.Count</td>
+                            <td>@item.FullName</td>
+                            <td>@item.CreatedAt.ToString("dd-mm-yyyy HH:mm")</td>
+                            <td>@item.OrderItems.Sum(x=>x.Count*(x.SalePrice-(x.SalePrice*x.DiscountPercent/100))).ToString("0.00")</td>
+                            <td>
+                                <span class="badge badge-@(item.Status==OrderStatus.Pending?"warning":(item.Status==OrderStatus.Accepted?"success":"danger"))">@item.Status</span>
+                            <td>
+                                <a asp-action="detail" asp-route-id="@item.Id" class="btn btn-info">Detail</a>
+                                    @if(item.Status == OrderStatus.Pending)
+                                    {
+                                     <a asp-action="edit" asp-route-id="@item.Id" class="btn btn-info">Edit</a>
+                                    }
+                            </td>
+
+                        </tr>
+                    }
+
+
+                </tbody>
+
+            </table>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item @(Model.HasPrev?"":"disabled")"><a class="page-link" asp-action="index" asp-route-page="@(Model.PageIndex-1)">Previous</a></li>
+                    @for (int i = 1; i <= Model.PageCount; i++)
+                    {
+                        <li class="page-item @(Model.PageIndex==i?"active":"")"><a class="page-link" asp-action="index" asp-route-page="@i">@i</a></li>
+                    }
+                    <li class="page-item @(Model.HasNext?"":"disabled")"><a class="page-link" asp-action="index" asp-route-page="@(Model.PageIndex+1)">Next</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+

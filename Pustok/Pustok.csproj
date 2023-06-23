@@ -1,0 +1,180 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\uploads\books\cart-product-1.jpg" />
+    <Content Remove="wwwroot\uploads\books\product-1.jpg" />
+    <Content Remove="wwwroot\uploads\books\product-10.jpg" />
+    <Content Remove="wwwroot\uploads\books\product-11.jpg" />
+    <Content Remove="wwwroot\uploads\books\product-12.jpg" />
+    <Content Remove="wwwroot\uploads\books\product-13.jpg" />
+    <Content Remove="wwwroot\uploads\books\product-2.jpg" />
+    <Content Remove="wwwroot\uploads\books\product-3.jpg" />
+    <Content Remove="wwwroot\uploads\books\product-4.jpg" />
+    <Content Remove="wwwroot\uploads\books\product-5.jpg" />
+    <Content Remove="wwwroot\uploads\books\product-6 (2).jpg" />
+    <Content Remove="wwwroot\uploads\books\product-6.jpg" />
+    <Content Remove="wwwroot\uploads\books\product-7.jpg" />
+    <Content Remove="wwwroot\uploads\books\product-8.jpg" />
+    <Content Remove="wwwroot\uploads\books\product-9.jpg" />
+    <Content Remove="wwwroot\uploads\books\product-details-1.jpg" />
+    <Content Remove="wwwroot\uploads\books\product-details-2.jpg" />
+    <Content Remove="wwwroot\uploads\books\product-details-3.jpg" />
+    <Content Remove="wwwroot\uploads\books\product-details-5.jpg" />
+    <Content Remove="wwwroot\uploads\sliders\home-2-slider-1.jpg" />
+    <Content Remove="wwwroot\uploads\sliders\home-2-slider-2.jpg" />
+    <Content Remove="wwwroot\uploads\sliders\home-3-slider-1.jpg" />
+    <Content Remove="wwwroot\uploads\sliders\home-3-slider-2.jpg" />
+    <Content Remove="wwwroot\uploads\sliders\home-4-slider-1.jpg" />
+    <Content Remove="wwwroot\uploads\sliders\home-4-slider-2.jpg" />
+    <Content Remove="wwwroot\uploads\sliders\home-slider-1-ai.png" />
+    <Content Remove="wwwroot\uploads\sliders\home-slider-2-ai.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\assets\css\main.css" />
+    <None Include="wwwroot\assets\css\plugins.css" />
+    <None Include="wwwroot\assets\fonts\fa-brands-400.eot" />
+    <None Include="wwwroot\assets\fonts\fa-brands-400.svg" />
+    <None Include="wwwroot\assets\fonts\fa-brands-400.ttf" />
+    <None Include="wwwroot\assets\fonts\fa-brands-400.woff" />
+    <None Include="wwwroot\assets\fonts\fa-brands-400.woff2" />
+    <None Include="wwwroot\assets\fonts\fa-brands-400d41d.eot" />
+    <None Include="wwwroot\assets\fonts\fa-regular-400.eot" />
+    <None Include="wwwroot\assets\fonts\fa-regular-400.svg" />
+    <None Include="wwwroot\assets\fonts\fa-regular-400.ttf" />
+    <None Include="wwwroot\assets\fonts\fa-regular-400.woff" />
+    <None Include="wwwroot\assets\fonts\fa-regular-400.woff2" />
+    <None Include="wwwroot\assets\fonts\fa-regular-400d41d.eot" />
+    <None Include="wwwroot\assets\fonts\fa-solid-900.eot" />
+    <None Include="wwwroot\assets\fonts\fa-solid-900.svg" />
+    <None Include="wwwroot\assets\fonts\fa-solid-900.ttf" />
+    <None Include="wwwroot\assets\fonts\fa-solid-900.woff" />
+    <None Include="wwwroot\assets\fonts\fa-solid-900.woff2" />
+    <None Include="wwwroot\assets\fonts\fa-solid-900d41d.eot" />
+    <None Include="wwwroot\assets\fonts\Ionicons28b5.eot" />
+    <None Include="wwwroot\assets\fonts\Ionicons28b5.svg" />
+    <None Include="wwwroot\assets\fonts\Ionicons28b5.ttf" />
+    <None Include="wwwroot\assets\fonts\Ionicons28b5.woff" />
+    <None Include="wwwroot\assets\fonts\Material-Design-Iconic-Fontd1f1.ttf" />
+    <None Include="wwwroot\assets\fonts\Material-Design-Iconic-Fontd1f1.woff" />
+    <None Include="wwwroot\assets\fonts\Material-Design-Iconic-Fontd1f1.woff2" />
+    <None Include="wwwroot\assets\image\bg-images\home-2-slider-1.jpg" />
+    <None Include="wwwroot\assets\image\bg-images\home-2-slider-2.jpg" />
+    <None Include="wwwroot\assets\image\bg-images\home-3-slider-1.jpg" />
+    <None Include="wwwroot\assets\image\bg-images\home-3-slider-2.jpg" />
+    <None Include="wwwroot\assets\image\bg-images\home-4-slider-1.jpg" />
+    <None Include="wwwroot\assets\image\bg-images\home-4-slider-2.jpg" />
+    <None Include="wwwroot\assets\image\bg-images\home-slider-1-ai.png" />
+    <None Include="wwwroot\assets\image\bg-images\home-slider-2-ai.png" />
+    <None Include="wwwroot\assets\image\bg-images\promo-banner-contained.jpg" />
+    <None Include="wwwroot\assets\image\bg-images\promo-banner-full.jpg" />
+    <None Include="wwwroot\assets\image\bg-images\promo-banner-mid.jpg" />
+    <None Include="wwwroot\assets\image\bg-images\promo-banner-small-with-text.jpg" />
+    <None Include="wwwroot\assets\image\bg-images\promo-banner-small.jpg" />
+    <None Include="wwwroot\assets\image\bg-images\promo-banner-with-text-2--small.jpg" />
+    <None Include="wwwroot\assets\image\bg-images\promo-banner-with-text-2.jpg" />
+    <None Include="wwwroot\assets\image\bg-images\promo-banner-with-text-big.jpg" />
+    <None Include="wwwroot\assets\image\bg-images\promo-banner-with-text.jpg" />
+    <None Include="wwwroot\assets\image\favicon.ico" />
+    <None Include="wwwroot\assets\image\icon\author-logo.png" />
+    <None Include="wwwroot\assets\image\icon\eng-flag.png" />
+    <None Include="wwwroot\assets\image\icon\germany-flag.png" />
+    <None Include="wwwroot\assets\image\icon\payment.png" />
+    <None Include="wwwroot\assets\image\icon\quotation.png" />
+    <None Include="wwwroot\assets\image\logo--footer.png" />
+    <None Include="wwwroot\assets\image\logo.png" />
+    <None Include="wwwroot\assets\image\others\best-seller-author.jpg" />
+    <None Include="wwwroot\assets\image\others\blog-grid-1.jpg" />
+    <None Include="wwwroot\assets\image\others\blog-grid-2.jpg" />
+    <None Include="wwwroot\assets\image\others\blog-grid-3.jpg" />
+    <None Include="wwwroot\assets\image\others\blog-grid-4.jpg" />
+    <None Include="wwwroot\assets\image\others\blog-img-big-1.jpg" />
+    <None Include="wwwroot\assets\image\others\blog-img-big-2.jpg" />
+    <None Include="wwwroot\assets\image\others\blog-img-big-3.jpg" />
+    <None Include="wwwroot\assets\image\others\brand-1.jpg" />
+    <None Include="wwwroot\assets\image\others\brand-2.jpg" />
+    <None Include="wwwroot\assets\image\others\brand-3.jpg" />
+    <None Include="wwwroot\assets\image\others\brand-4.jpg" />
+    <None Include="wwwroot\assets\image\others\brand-5.jpg" />
+    <None Include="wwwroot\assets\image\others\brand-6.jpg" />
+    <None Include="wwwroot\assets\image\others\cat-gal-large.png" />
+    <None Include="wwwroot\assets\image\others\cat-gal-mid-2.png" />
+    <None Include="wwwroot\assets\image\others\cat-gal-mid.png" />
+    <None Include="wwwroot\assets\image\others\cat-gal-small-2.jpg" />
+    <None Include="wwwroot\assets\image\others\cat-gal-small.png" />
+    <None Include="wwwroot\assets\image\others\client-1.png" />
+    <None Include="wwwroot\assets\image\others\client-2.png" />
+    <None Include="wwwroot\assets\image\others\client-3.png" />
+    <None Include="wwwroot\assets\image\others\client-4.png" />
+    <None Include="wwwroot\assets\image\others\client-5.png" />
+    <None Include="wwwroot\assets\image\others\home-blog-1.jpg" />
+    <None Include="wwwroot\assets\image\others\home-blog-2.jpg" />
+    <None Include="wwwroot\assets\image\others\home-side-promo.jpg" />
+    <None Include="wwwroot\assets\image\products\cart-product-1.jpg" />
+    <None Include="wwwroot\assets\image\products\product-1.jpg" />
+    <None Include="wwwroot\assets\image\products\product-10.jpg" />
+    <None Include="wwwroot\assets\image\products\product-11.jpg" />
+    <None Include="wwwroot\assets\image\products\product-12.jpg" />
+    <None Include="wwwroot\assets\image\products\product-13.jpg" />
+    <None Include="wwwroot\assets\image\products\product-2.jpg" />
+    <None Include="wwwroot\assets\image\products\product-3.jpg" />
+    <None Include="wwwroot\assets\image\products\product-4.jpg" />
+    <None Include="wwwroot\assets\image\products\product-5.jpg" />
+    <None Include="wwwroot\assets\image\products\product-6 %282%29.jpg" />
+    <None Include="wwwroot\assets\image\products\product-6.jpg" />
+    <None Include="wwwroot\assets\image\products\product-7.jpg" />
+    <None Include="wwwroot\assets\image\products\product-8.jpg" />
+    <None Include="wwwroot\assets\image\products\product-9.jpg" />
+    <None Include="wwwroot\assets\image\products\product-details-1.jpg" />
+    <None Include="wwwroot\assets\image\products\product-details-2.jpg" />
+    <None Include="wwwroot\assets\image\products\product-details-3.jpg" />
+    <None Include="wwwroot\assets\image\products\product-details-5.jpg" />
+    <None Include="wwwroot\assets\js\ajax-mail.js" />
+    <None Include="wwwroot\assets\js\custom.js" />
+    <None Include="wwwroot\assets\js\plugins.js" />
+    <None Include="wwwroot\uploads\books\cart-product-1.jpg" />
+    <None Include="wwwroot\uploads\books\product-1.jpg" />
+    <None Include="wwwroot\uploads\books\product-10.jpg" />
+    <None Include="wwwroot\uploads\books\product-11.jpg" />
+    <None Include="wwwroot\uploads\books\product-12.jpg" />
+    <None Include="wwwroot\uploads\books\product-13.jpg" />
+    <None Include="wwwroot\uploads\books\product-2.jpg" />
+    <None Include="wwwroot\uploads\books\product-3.jpg" />
+    <None Include="wwwroot\uploads\books\product-4.jpg" />
+    <None Include="wwwroot\uploads\books\product-5.jpg" />
+    <None Include="wwwroot\uploads\books\product-6 (2).jpg" />
+    <None Include="wwwroot\uploads\books\product-6.jpg" />
+    <None Include="wwwroot\uploads\books\product-7.jpg" />
+    <None Include="wwwroot\uploads\books\product-8.jpg" />
+    <None Include="wwwroot\uploads\books\product-9.jpg" />
+    <None Include="wwwroot\uploads\books\product-details-1.jpg" />
+    <None Include="wwwroot\uploads\books\product-details-2.jpg" />
+    <None Include="wwwroot\uploads\books\product-details-3.jpg" />
+    <None Include="wwwroot\uploads\books\product-details-5.jpg" />
+    <None Include="wwwroot\uploads\sliders\home-2-slider-1.jpg" />
+    <None Include="wwwroot\uploads\sliders\home-2-slider-2.jpg" />
+    <None Include="wwwroot\uploads\sliders\home-3-slider-1.jpg" />
+    <None Include="wwwroot\uploads\sliders\home-3-slider-2.jpg" />
+    <None Include="wwwroot\uploads\sliders\home-4-slider-1.jpg" />
+    <None Include="wwwroot\uploads\sliders\home-4-slider-2.jpg" />
+    <None Include="wwwroot\uploads\sliders\home-slider-1-ai.png" />
+    <None Include="wwwroot\uploads\sliders\home-slider-2-ai.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.16" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.16" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.16">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.13" />
+  </ItemGroup>
+
+</Project>

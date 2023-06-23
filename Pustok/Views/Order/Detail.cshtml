@@ -1,0 +1,49 @@
+﻿@model Order
+@{
+	int itemNo = 0;
+}
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<div class="page-section inner-page-sec-padding">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="row">
+					<!-- My Account Tab Content Start -->
+					<div class="col-lg-9 col-12 mt--30 mt-lg--0">
+								<div class="myaccount-content">
+									<h3>Ordered Products</h3>
+									<div class="myaccount-table table-responsive text-center">
+										<table class="table table-bordered">
+											<thead class="thead-light">
+												<tr>
+													<th>No</th>
+													<th>Product name</th>
+													<th>Product count</th>
+													<th>Total</th>
+												</tr>
+											</thead>
+											<tbody>
+												@foreach (var item in Model.OrderItems)
+												{
+													itemNo++;
+													<tr>
+														<td>@itemNo</td>
+														<td>@item.Book.Name</td>
+														<td>@item.Count</td>
+														<td>@((item.Count * (item.SalePrice - (item.SalePrice * item.DiscountPercent / 100))).ToString("0.00"))</td>
+													</tr>
+												}
+											</tbody>
+										</table>
+									</div>
+								</div>
+					</div>
+					<!-- My Account Tab Content End -->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

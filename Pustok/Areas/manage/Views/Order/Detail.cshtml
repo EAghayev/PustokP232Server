@@ -1,0 +1,34 @@
+﻿@model Order
+@{
+    ViewData["Title"] = "Detail";
+    decimal total = 0;
+}
+
+<div class="container-fluid">
+
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">Orders</h1>
+    </div>
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h6 class="card-title">@Model.FullName - @Model.CreatedAt.ToString("dd-MM-yyyy HH:mm")</h6>
+                    <p class="card-text">@Model.Note</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Products: </li>
+                    @foreach (var item in Model.OrderItems)
+                    {
+                        var price = item.SalePrice * (100 - item.DiscountPercent) / 100;
+                        <li class="list-group-item">@item.Book.Name (@price.ToString("0.00")) X @item.Count</li>
+                        total += price * item.Count;
+                    }
+                    <li class="list-group-item"><b>Total - @total.ToString("0.00")</b></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+

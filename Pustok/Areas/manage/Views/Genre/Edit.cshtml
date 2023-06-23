@@ -1,0 +1,31 @@
+﻿@model Genre
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="container-fluid">
+
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">Genre Edit</h1>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <form asp-action="edit" method="post">
+                <div class="form-group">
+                    <label asp-for="Name">Name</label>
+                    <input asp-for="Name" type="text" class="form-control" placeholder="Enter Name">
+                    <span class="text-danger" asp-validation-for="Name"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+
+@section Scripts{
+            @Html.Partial("_ValidationScriptsPartial")
+}
+
