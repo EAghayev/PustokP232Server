@@ -13,7 +13,7 @@ builder.Services.AddSignalR();
 
 builder.Services.AddDbContext<PustokDbContext>(opt =>
 {
-    opt.UseSqlServer("Server=DESKTOP-BU4GQ1K\\SQLEXPRESS;Database=P232Pustok;Trusted_Connection=True");
+    opt.UseSqlServer("Server=tcp:pustok232db1.database.windows.net,1433;Initial Catalog=p232pustok;Persist Security Info=False;User ID=p232pustokadmin;Password=Admin@123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
 });
 
 
